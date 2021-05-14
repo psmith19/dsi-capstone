@@ -2,10 +2,11 @@
 import streamlit as st
 import pickle
 import numpy as np
+import sklearn
 
 # load models
-survey_model = pickle.load(open('heart_survey.p', 'rb'))
-diabetes_model = pickle.load(open('diabetes.p', 'rb'))
+survey_model = pickle.load(open('model_heart.p', 'rb'))
+diabetes_model = pickle.load(open('model_diabetes.p', 'rb'))
 
 ################################################################################
 # This section lays out the design of the home page
